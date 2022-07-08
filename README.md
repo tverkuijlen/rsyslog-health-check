@@ -1,0 +1,1 @@
+# rsyslog-health-check
