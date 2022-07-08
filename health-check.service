@@ -1,0 +1,12 @@
+[Unit]
+Description=Rsyslog health check 
+After=network-online.target 
+
+[Service]
+Type=simple 
+User=nobody 
+ExecStart=/usr/local/bin/health-check.py
+Restart=always
+
+[Install]
+WantedBy=default.target
